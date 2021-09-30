@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1632707605 source:/home/mufid/Music/TP1/main.cpp
+	"hello.h"
+
+1632703633 /home/mufid/Music/TP1/hello.h
+	<iostream>
+	<cstdlib>
+
+1632707621 source:/home/mufid/Music/TP1/hello.cpp
+	"hello.h"
+
+1632743196 source:/home/mufid/Music/TP1/hello_1301204441.cpp
+	"hello_1301204441.h"
+
+1632703633 /home/mufid/Music/TP1/hello_1301204441.h
+	<iostream>
+	<cstdlib>
+
+1632739235 source:/home/mufid/Music/TP1/main_1301204441.cpp
+	"hello_1301204441.h"
+
