@@ -1,0 +1,55 @@
+Ditulis di header:
+void create_list(List &L);
+void insert_last(List &L, address P);
+void delete_first(List &L, address &P);
+void delete_last(List &L, address &P);
+void delete_after(List &L, address Prec, address &P);
+
+
+Di tulis di SLL.cpp cpp:
+void create_list(List &L){
+    first(L) = NIL;
+}
+
+void insert_last(List &L, address P) {
+    if (first(L)==NIL){
+        first(L)=P;
+    } else {
+        address addressBerjalan = first(L);
+        while (next(addressBerjalan) != NIL) {
+            addressBerjalan = next(addressBerjalan);
+        }
+        next(addressBerjalan) = P;
+    }
+}
+
+void delete_first(List &L, address &P) {
+    P = first(L);
+    if (next(first(L)) == NIL) {
+        first(L) = NIL;
+    } else {
+        first(L) = next(first(L));
+    }
+    next(P) = NIL;
+}
+
+
+void delete_after(List &L, address Prec, address &P){
+    P = next(Prec);
+    next(Prec) = next(P);
+    next(P) = NIL;
+}
+
+void delete_last(List &L, address &P){
+    if (next(first(L)) == NIL) {
+        P = first(L);
+        next(first(L)) = NIL;
+    } else {
+        address q = first(L);
+        while (next(next(q)) != NIL){
+            q = next(q);
+        }
+        P=next(q);
+        next(q)= NIL;
+    }
+}

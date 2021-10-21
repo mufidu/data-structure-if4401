@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1633587162 source:/home/mufid/Music/MODUL 3/main.cpp
+	<iostream>
+	"catalog_1301204441.h"
+
+1633587906 /home/mufid/Music/MODUL 3/catalog_1301204441.h
+	<iostream>
+
+1633585891 source:/home/mufid/Music/MODUL 3/catalog_1301204441.cpp
+	"catalog_1301204441.h"
+

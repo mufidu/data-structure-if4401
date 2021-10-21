@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1634194057 source:/home/mufid/Music/MODUL 4/main.cpp
+	"mylist.h"
+
+1634194077 /home/mufid/Music/MODUL 4/mylist.h
+	<iostream>
+	<string>
+
+1634194050 source:/home/mufid/Music/MODUL 4/mylist.cpp
+	"mylist.h"
+
