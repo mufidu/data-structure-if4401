@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1635089454 source:/home/mufid/Music/TP6/main_1301204441.cpp
+	"tp6_1301204441.h"
+
+1635087673 /home/mufid/Music/TP6/tp6_1301204441.h
+	<iostream>
+	<string>
+
+1635088484 source:/home/mufid/Music/TP6/tp6_1301204441.cpp
+	"tp6_1301204441.h"
+
