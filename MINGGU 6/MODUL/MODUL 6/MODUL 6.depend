@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1635404442 source:/home/mufid/Music/MODUL 6/DLL_First_Last.cpp
+	"DLL_First_Last.h"
+
+1635404159 /home/mufid/Music/MODUL 6/DLL_First_Last.h
+	<iostream>
+	<string>
+
+1635404546 source:/home/mufid/Music/MODUL 6/Test_DLL_First_Last.cpp
+	"DLL_First_Last.h"
+
