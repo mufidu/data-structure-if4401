@@ -4,12 +4,16 @@ using namespace std;
 
 void createList (List &L)
 {
+// Muhammad Mufid Utomo
+// 1301204441
     first(L) = nil;
     last(L) = nil;
 }
 
 address createElement (infotype dataBaru)
 {
+// Muhammad Mufid Utomo
+// 1301204441
     address P;
     P = new elmList;
     info(P) = dataBaru;
@@ -20,6 +24,8 @@ address createElement (infotype dataBaru)
 
 void insertLast (List &L, address P)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     if (first(L) == nil)
     {
         first(L) = P;
@@ -35,6 +41,8 @@ void insertLast (List &L, address P)
 
 void insertAfter (address Prec, address P, List L)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
 
     if (Prec == last(L))
     {
@@ -51,6 +59,8 @@ void insertAfter (address Prec, address P, List L)
 
 void deleteFirst (List &L, address &P)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     P = first(L);
     if (next(first(L)) == nil)
     {
@@ -67,6 +77,8 @@ void deleteFirst (List &L, address &P)
 
 void deleteAfter (address Prec, address &P)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     P = next(Prec);
     next(Prec) = next(P);
     prev(next(P)) = prev(P);
@@ -76,6 +88,8 @@ void deleteAfter (address Prec, address &P)
 
 void printList (List L)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     address P = first(L);
     while (P != nil)
     {
@@ -87,6 +101,8 @@ void printList (List L)
 
 void insertFirst (List &L, address &P)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     if (first(L) == nil)
     {
         first(L) = P;
@@ -104,6 +120,8 @@ void insertFirst (List &L, address &P)
 
 void insertAscending (List &L, infotype dataBaru)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     address P = createElement(dataBaru);
     if (first(L) == nil)
     {
@@ -130,6 +148,8 @@ void insertAscending (List &L, infotype dataBaru)
 
 void deleteLast (List &L, address &P)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     P = last(L);
     if (first(L) == last(L))
     {
@@ -146,12 +166,14 @@ void deleteLast (List &L, address &P)
 
 void deleteElm (List &L, infotype dataHapus)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     address P = first(L);
     while (P != nil && info(P) != dataHapus)
     {
         P = next(P);
     }
-    
+
     if (P == first(L))
     {
         deleteFirst(L, P);
@@ -164,11 +186,13 @@ void deleteElm (List &L, infotype dataHapus)
     {
         deleteAfter(prev(P), P);
     }
-    
+
 }
 
 bool findElement (List L, infotype dataDicari)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     address P = first(L);
     while (P != nil)
     {
@@ -183,6 +207,8 @@ bool findElement (List L, infotype dataDicari)
 
 int frequencyofElm (List L, infotype dataDicari)
 {
+    // Muhammad Mufid Utomo
+// 1301204441
     int count = 0;
     address P = first(L);
     while (P != nil)

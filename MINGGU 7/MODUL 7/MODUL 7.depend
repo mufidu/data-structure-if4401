@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1636007190 source:/home/mufid/Music/MODUL 7/sll.cpp
+	"sll.h"
+
+1636006205 /home/mufid/Music/MODUL 7/sll.h
+	<iostream>
+	<string>
+
+1636007514 source:/home/mufid/Music/MODUL 7/main.cpp
+	"sll.h"
+
